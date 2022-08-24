@@ -1,0 +1,108 @@
+.pastel-set-wrap {
+  margin: 0px -3px 0px -3px;
+  white-space: nowrap;
+}
+
+.pastel-set-wrap > h6 {
+  margin: 30px 0 0 5px;
+}
+
+.set-row {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.set-row > div {
+  width: 25%;
+  height: 0;
+  padding-bottom: 15%;
+  margin: 8px;
+}
+
+.colour-tile {
+  position: relative;
+  background-size: cover;
+  height: 0;
+  border-radius: 6px;
+  box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.11), 2px 2px 20px rgba(0, 0, 0, 0.21);
+}
+
+.colour-name {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  margin: 0 3px 0 8px;
+  text-transform: uppercase;
+}
+
+.colour-name-abbrv {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  margin: 0 3px 0 8px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1001px) {
+  .colour-name-abbrv {
+    display: none;
+  }
+  .set-row > div {
+    margin: 4px;    
+  }
+  .colour-name {
+    margin: 0 3px 0 3px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  .colour-name-abbrv {
+    display: none;
+  }
+  .set-row > div {
+    margin: 4px;    
+  }
+  .colour-name {
+    font-size: 0.8rem;
+    margin: 0 3px 0 3px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .colour-name {
+    display: none;
+  }
+  .set-row > div {
+    margin: 4px;    
+  }
+  .colour-name-abbrv {
+    font-size: 0.8rem;
+    margin: 0 3px 0 3px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .colour-name {
+    display: none;
+  }
+  .set-row > div {
+    margin: 2px;    
+  }
+  .colour-name-abbrv {
+    font-size: 0.6rem;
+    margin: 0 3px 0 3px;
+  }
+}
